@@ -18,3 +18,9 @@ class Room:
     def draw(self, gui):
         gui.draw_line(self.c, 0, 0, self.width - 1, 0,
              self.fore_color, self.back_color)
+        gui.draw_line(self.c, 0, self.height - 1, self.width - 1,
+                self.height - 1, self.fore_color, self.back_color)
+        gui.draw_line(self.c, 0, 0, 0, self.height - 1,
+                self.fore_color, self.back_color)
+        gui.draw_line(self.c, self.width - 1, 0, self.width - 1,
+                self.height - 1, self.fore_color, self.back_color)
